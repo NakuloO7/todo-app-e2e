@@ -1,0 +1,18 @@
+//file I hove wrote to check this setup and can use for future ref 
+
+1. created a docker-compose.yml
+  - and wrote the first service of postgress 
+2. checked if it is running 
+   - docker compose up -d. 
+   - docker ps //for checking the running container
+   - docker volume ls //verify the volume exists
+3. created the backend with src/index.ts and added a Dockerfile to it and wrote it correctly as in the repo
+4. add new service backend to the docker-compose file 
+   - from root i.e /Ctodo folder - docker compose up -d --build
+   - docker logs todo-backend //is should show server running on port 
+DONE
+
+to restart : 
+docker compose down
+docker compose build --no-cache
+docker compose up -d
