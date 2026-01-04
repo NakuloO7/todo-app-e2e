@@ -16,3 +16,7 @@ to restart :
 docker compose down
 docker compose build --no-cache
 docker compose up -d
+
+
+docker compose up -d --build //build and up directly
+ 
