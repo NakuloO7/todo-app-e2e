@@ -2,7 +2,7 @@ import { NextFunction, Request, Response } from "express";
 import { verifyJWT } from "../utils/jwt";
 
 export interface AuthRequest extends Request{
-    userId? : string;
+    userId?: string;
 }
 
 
