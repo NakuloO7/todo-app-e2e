@@ -83,7 +83,7 @@ router.put('/:id', async(req : AuthRequest, res)=>{
 })
  
 //Delete 
-router.delete(":/id", async(req : AuthRequest, res)=>{
+router.delete("/:id", async(req : AuthRequest, res)=>{
     const {id } = req.params;
     const userId = req.userId;
     if(!id || !userId){
